@@ -8,6 +8,10 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
 
+router.get('/login', function(req, res, next) {
+  res.redirect('https://ruling-rattler-31.accounts.dev/sign-in');
+});
+
 router.get('/protected', requireAuth(), async (req, res) => {
   // Use `getAuth()` to get the user's `userId`
   const { userId } = getAuth(req)
