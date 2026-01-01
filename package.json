@@ -9,6 +9,7 @@
     "pm2:logs": "pm2 logs clerk-oidc"
   },
   "dependencies": {
+    "@clerk/express": "^1.7.60",
     "cookie-parser": "~1.4.4",
     "debug": "~2.6.9",
     "dotenv": "^17.2.3",
